@@ -21,7 +21,7 @@ In `_config.yml` remember to specify your own data:
     
     author :
       name : leisurely
-      email : hanlongfei@hotmail.com
+      email : wogaizenmb@sina.com
       github : leisurely
       twitter : leisurely
 
