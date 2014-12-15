@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 韩龙飞
-tagline: 如果你未曾失败过，说明你的努力还远远不够——做最好的自己
+title: 我的好心情
+tagline: 内心强大才能无懈可击！
 ---
 {% include JB/setup %}
 
