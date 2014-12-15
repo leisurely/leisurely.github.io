@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Good Morning,Hello World!
+tagline: 大家好！
 ---
 {% include JB/setup %}
 
