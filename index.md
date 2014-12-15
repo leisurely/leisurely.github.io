@@ -4,6 +4,10 @@ title: Leisurely
 tagline: 内心强大才能无懈可击！
 ---
 {% include JB/setup %}
+<MARQUEE width=宽 height=高 onmouseover=stop() onmouseout=start() scrollAmount=10 loop=infinite deplay="0"><img src="head.jpg"><img src="head.jpg"><img src="head.jpg"></MARQUEE> 
+<embed src="123.swf" quality=high  width="1020" height="716" ></embed>
+<div><p><img src="myself.jpg"/></p></div>
+<div><span style="font-family:KaiTi;font-size:30px;color:#fff;"><a></a></span></div>
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
