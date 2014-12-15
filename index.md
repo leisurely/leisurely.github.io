@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 我的好心情
+title: Leisurely
 tagline: 内心强大才能无懈可击！
 ---
 {% include JB/setup %}
@@ -17,13 +17,13 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 
 In `_config.yml` remember to specify your own data:
     
-    title : Drafly's Blog
+    title : leisurly's Blog
     
     author :
-      name : Longfei Han(韩龙飞)
+      name : leisurely
       email : hanlongfei@hotmail.com
-      github : drafly
-      twitter : drafly
+      github : leisurely
+      twitter : leisurely
 
 The theme should reference these variables whenever needed.
     
