@@ -22,7 +22,7 @@ swfobject.embedSWF("design3edge.swf", "content_slider", "575", "265", "9", "expr
 
 <div>
 <div style="float:left;width:50%">
-<img src="/img/slide_6.jpg" align="left"/></div>
+<img src="myself.png" align="left"/></div>
 
 <span style="align: right; margin-left:2em; text-align:center; font-family: KaiTi; font-weight: bold; line-height:1.5em;font-size:20pt;">
 大家好，我是马新成，毕业于河北科技大学信息学院。现就读于北京理工大学信息与电子学院，攻读硕士学位。隶属于信息安全与对抗实验中心<a href="http://www.isclab.org">官方网站</a>。个人主研数据挖掘，机器学习方向。个人兴趣编程、运动。熟悉C,C++,PHP,JAVA,MATLAB,R等多种编程语言，熟练使用eclipse,vs2010,RStudio等编程环境。有一年多的项目经验。本科有硬件开发背景，熟知keil3，WAVE6000，Quertuas等硬件开发平台。热衷于足球活动。关注中国足球发展。
@@ -40,7 +40,7 @@ swfobject.embedSWF("design3edge.swf", "content_slider", "575", "265", "9", "expr
   {% endfor %}
 </ul>
 </div>
-<div style="float:right; width:575px">
+<div style="float:center; width:575px">
 
 <div style="float:right" id="content_slider"> <a href="http://www.adobe.com/go/getflashplayer"> <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="" /> </a> </div>
 </div>
