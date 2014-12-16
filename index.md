@@ -40,7 +40,7 @@ swfobject.embedSWF("design3edge.swf", "content_slider", "575", "265", "9", "expr
   {% endfor %}
 </ul>
 </div>
-<div style="float:center; width:575px">
+<div style="float:right; width:575px">
 
 <div style="float:right" id="content_slider"> <a href="http://www.adobe.com/go/getflashplayer"> <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="" /> </a> </div>
 </div>
