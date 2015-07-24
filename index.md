@@ -57,7 +57,7 @@ timeString = "当前时间："+years+months+days+hours+minutes+seconds;
 Clock.innerHTML = timeString;
 window.setTimeout("tick();", 1000);
 }
-window.onload = tick;
+tick();
 </script>
 
 
