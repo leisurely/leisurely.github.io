@@ -12,36 +12,6 @@ tagline: 内心强大才能无懈可击！<div style="float:right"><p><SPAN styl
 a{text-decoration:none;color:#0066CC;}
 a:hover{ color:#FF0000; text-decoration: underline;} 
 </style>
-
-
-<div>
-<div style="float:left;width:50%">
-<img src="myself.png" align="left"/></div>
-
-<span style="align: right; margin-left:2em; text-align:center; font-family: KaiTi; font-weight: bold; line-height:1.5em;font-size:18pt;">
-大家好，我是马新成，毕业于河北科技大学信息学院。现就读于北京理工大学信息与电子学院，攻读硕士学位。隶属于<a href="http://www.isclab.org">信息安全与对抗实验中心</a>。个人主研数据挖掘，机器学习方向。个人兴趣编程、运动。熟悉C,C++,JAVA,等多种编程语言，及PHP,MATLAB,R等脚本语言，熟练使用RStudio，eclipse，vs2010等编程工具，擅长数据可视化工具Echarts和Finereport。有两年多的项目经验。热衷于足球活动。</span>
-</div>
-<br/>
-
-<table style="width:100%">
-	<tr>
-		<td style="width:50%">
-
-<ol id="roll" style="float:right">
-	{% for post in site.posts %}
-    <li><a style="font-size:18pt" href="{{ BASE_PATH }}{{ post.url }}">{{ post.date | date_to_string }} &raquo; {{ post.title }}</a></li>
-	{% endfor %}
-</ol>
-		</td>
-		<td style="width:50%">
-		<div style="width:50%">
-			<video width="528" height="297" controls autoplay loop>
-				<source src="myself.mp4" type="video/mp4"></source>
-			</video>
-		</div>
-		</td>
-	</tr>
-</table>
 <script type="text/javascript">
 function tick() {
 var years,months,days,hours, minutes, seconds;
@@ -89,6 +59,37 @@ window.setTimeout("tick();", 1000);
 }
 window.onload = tick;
 </script>
+
+
+<div>
+<div style="float:left;width:50%">
+<img src="myself.png" align="left"/></div>
+
+<span style="align: right; margin-left:2em; text-align:center; font-family: KaiTi; font-weight: bold; line-height:1.5em;font-size:18pt;">
+大家好，我是马新成，毕业于河北科技大学信息学院。现就读于北京理工大学信息与电子学院，攻读硕士学位。隶属于<a href="http://www.isclab.org">信息安全与对抗实验中心</a>。主研数据挖掘，机器学习方向。个人兴趣编程、运动。熟悉C,C++,JAVA等编程语言，PHP,MATLAB,R等脚本语言，熟练使用RStudio，eclipse，vs2010等编程工具，擅长数据可视化工具Echarts和Finereport。有两年多的项目经验。热衷于足球活动。</span>
+</div>
+<br/>
+
+<table style="width:100%">
+	<tr>
+		<td style="width:50%">
+
+<ol id="roll" style="float:right">
+	{% for post in site.posts %}
+    <li><a style="font-size:18pt" href="{{ BASE_PATH }}{{ post.url }}">{{ post.date | date_to_string }} &raquo; {{ post.title }}</a></li>
+	{% endfor %}
+</ol>
+		</td>
+		<td style="width:50%">
+		<div style="width:50%">
+			<video width="528" height="297" controls autoplay loop>
+				<source src="myself.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		</td>
+	</tr>
+</table>
+
 <script type="text/javascript">
 (function(A){
    function _ROLL(obj){
