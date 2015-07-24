@@ -1,0 +1,69 @@
+<html>
+<head>
+<SCRIPT language=JavaScript>
+function tick() {
+var years,months,days,hours, minutes, seconds;
+var intYears,intMonths,intDays,intHours, intMinutes, intSeconds;
+var today;
+today = new Date(); //系统当前时间
+intYears = today.getFullYear(); //得到年份,getFullYear()比getYear()更普适
+intMonths = today.getMonth() + 1; //得到月份，要加1
+intDays = today.getDate(); //得到日期
+intHours = today.getHours(); //得到小时 
+intMinutes = today.getMinutes(); //得到分钟
+intSeconds = today.getSeconds(); //得到秒钟
+years = intYears + "年"; 
+
+if(intMonths < 10 ){
+months = "0" + intMonths +"月";
+} else {
+months = intMonths +"月";
+}
+if(intDays < 10 ){
+days = "0" + intDays +"日 ";
+} else {
+days = intDays + "日 ";
+}
+if (intHours == 0) {
+hours = "00:";
+} else if (intHours < 10) {
+hours = "0" + intHours+":";
+} else {
+hours = intHours + ":";
+}
+if (intMinutes < 10) {
+minutes = "0"+intMinutes+":";
+} else {
+minutes = intMinutes+":";
+}
+if (intSeconds < 10) {
+seconds = "0"+intSeconds+" ";
+} else {
+seconds = intSeconds+" ";
+}
+timeString = years+months+days+hours+minutes+seconds;
+Clock.innerHTML = timeString;
+window.setTimeout("tick();", 1000);
+}
+window.onload = tick;
+</SCRIPT>
+</head>
+<BODY leftMargin=0 topMargin=0 marginwidth="0" marginheight="0">
+<div width=100% height=100%>
+	<p><SPAN id="Clock"></SPAN></p>
+	<video width="528" height="297" controls autoplay loop>
+		<source src="myself.mp4" type="video/mp4">
+	</video>
+	
+</div>
+<div id="blink"><font face="Arial"><b>祝大家新年快乐！</b></font></div> 
+<script language="javascript"> 
+function changeColor(){ 
+var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
+color=color.split("|"); 
+document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
+} 
+setInterval("changeColor()",200); 
+</script>
+</BODY>
+</HTML>

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Leisurely
-tagline: 内心强大才能无懈可击！
+tagline: 内心强大才能无懈可击！<div style="float:right"><p><SPAN style="color:blue;font-family:楷体" id="Clock"></SPAN></p></div>
+
 ---
 {% include JB/setup %}
 <style type="text/css">
@@ -18,7 +19,7 @@ a:hover{ color:#FF0000; text-decoration: underline;}
 <img src="myself.png" align="left"/></div>
 
 <span style="align: right; margin-left:2em; text-align:center; font-family: KaiTi; font-weight: bold; line-height:1.5em;font-size:18pt;">
-大家好，我是马新成，毕业于河北科技大学信息学院。现就读于北京理工大学信息与电子学院，攻读硕士学位。隶属于信息安全与对抗实验中心<a href="http://www.isclab.org">官方网站</a>。个人主研数据挖掘，机器学习方向。个人兴趣编程、运动。熟悉C,C++,JAVA,等多种编程语言，及PHP,MATLAB,R等脚本语言，熟练使用RStudio，eclipse，vs2010等编程工具，擅长数据可视化工具Echarts和Finereport。有两年多的项目经验。热衷于足球活动。</span>
+大家好，我是马新成，毕业于河北科技大学信息学院。现就读于北京理工大学信息与电子学院，攻读硕士学位。隶属于<a href="http://www.isclab.org">信息安全与对抗实验中心</a>。个人主研数据挖掘，机器学习方向。个人兴趣编程、运动。熟悉C,C++,JAVA,等多种编程语言，及PHP,MATLAB,R等脚本语言，熟练使用RStudio，eclipse，vs2010等编程工具，擅长数据可视化工具Echarts和Finereport。有两年多的项目经验。热衷于足球活动。</span>
 </div>
 <br/>
 
@@ -33,9 +34,61 @@ a:hover{ color:#FF0000; text-decoration: underline;}
 </ol>
 		</td>
 		<td style="width:50%">
+		<div style="width:50%">
+			<video width="528" height="297" controls autoplay loop>
+				<source src="myself.mp4" type="video/mp4"></source>
+			</video>
+		</div>
 		</td>
 	</tr>
 </table>
+<script type="text/javascript">
+function tick() {
+var years,months,days,hours, minutes, seconds;
+var intYears,intMonths,intDays,intHours, intMinutes, intSeconds;
+var today;
+today = new Date(); //系统当前时间
+intYears = today.getFullYear(); //得到年份,getFullYear()比getYear()更普适
+intMonths = today.getMonth() + 1; //得到月份，要加1
+intDays = today.getDate(); //得到日期
+intHours = today.getHours(); //得到小时 
+intMinutes = today.getMinutes(); //得到分钟
+intSeconds = today.getSeconds(); //得到秒钟
+years = intYears + "年"; 
+
+if(intMonths < 10 ){
+months = "0" + intMonths +"月";
+} else {
+months = intMonths +"月";
+}
+if(intDays < 10 ){
+days = "0" + intDays +"日 ";
+} else {
+days = intDays + "日 ";
+}
+if (intHours == 0) {
+hours = "00:";
+} else if (intHours < 10) {
+hours = "0" + intHours+":";
+} else {
+hours = intHours + ":";
+}
+if (intMinutes < 10) {
+minutes = "0"+intMinutes+":";
+} else {
+minutes = intMinutes+":";
+}
+if (intSeconds < 10) {
+seconds = "0"+intSeconds+" ";
+} else {
+seconds = intSeconds+" ";
+}
+timeString = "当前时间："+years+months+days+hours+minutes+seconds;
+Clock.innerHTML = timeString;
+window.setTimeout("tick();", 1000);
+}
+window.onload = tick;
+</script>
 <script type="text/javascript">
 (function(A){
    function _ROLL(obj){
