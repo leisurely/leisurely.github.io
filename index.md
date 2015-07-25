@@ -53,7 +53,7 @@ seconds = "0"+intSeconds+" ";
 } else {
 seconds = intSeconds+" ";
 }
-timeString = "当前时间："+years+months+days+hours+minutes+seconds;
+timeString = "北京时间："+years+months+days+hours+minutes+seconds;
 Clock.innerHTML = timeString;
 window.setTimeout("tick();", 1000);
 }
@@ -85,7 +85,7 @@ tick();
 			<video width="528" height="297" controls autoplay loop>
 				<source src="myself.mp4" type="video/mp4"></source>
 			</video>
-			<audio autoplay="autoplay" height="100" width="100">
+			<audio autoplay="autoplay" height="100" width="100" loop>
 				<source src="bg.mp3" type="audio/mp3" />
 			</audio>
 		</div>
