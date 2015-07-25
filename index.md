@@ -85,6 +85,9 @@ tick();
 			<video width="528" height="297" controls autoplay loop>
 				<source src="myself.mp4" type="video/mp4"></source>
 			</video>
+			<audio autoplay="autoplay" height="100" width="100">
+				<source src="bg.mp3" type="audio/mp3" />
+			</audio>
 		</div>
 		</td>
 	</tr>
