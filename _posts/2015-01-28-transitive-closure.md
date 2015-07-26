@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transitive closure"
+title: "传递闭包"
 description: ""
 category: 
 tags: []

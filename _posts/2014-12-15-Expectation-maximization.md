@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Expectation maximization"
+title: "期望最大化"
 description: ""
 category: static
 tags: [static]
