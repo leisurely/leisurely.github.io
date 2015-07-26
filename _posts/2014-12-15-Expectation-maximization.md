@@ -74,7 +74,7 @@ $$E(Y) = E[g(X)] = \sum_{k=1}^{\infty}g(x_k)p_k$$
 （M步）计算 $$\theta:=argmax_{\theta}\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$
   
 这里顺便提一下其中的p的计算式可以实例化 例如p的公式可以被 贝叶斯公式替代 另外对于z和$$\theta$$的初始值，有的资料给出的办法是第一次猜测隐含类别变量z，对于$$\theta$$可以复给一个随意的初始值
-那么究竟怎么确保EM收敛？假定$$\theta^{(t)}$$和$$\theta^{(t+1))$$是EM第t次和t+1次迭代后的结果。如果我们证明了$$l(\theta^{(t)})\leql(\theta^{(t+1)})$$，也就是说极大似然估计单调增加，那么最终我们会到达最大似然估计的最大值。下面来证明，选定$$\theta^{(t)}$$后，我们得到E步
+那么究竟怎么确保EM收敛？假定$$\theta^{(t)}$$和$$\theta^{(t+1)}$$是EM第t次和t+1次迭代后的结果。如果我们证明了$$l(\theta^{(t)})\leq l(\theta^{(t+1)})$$，也就是说极大似然估计单调增加，那么最终我们会到达最大似然估计的最大值。下面来证明，选定$$\theta^{(t)}$$后，我们得到E步
 
 $$Q_i^{(t)}(z^{(i)}):=p(z^{(i)}|x^{(i)};\theta^{(t)})$$
 
@@ -102,8 +102,5 @@ $$l(\theta)\geq\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})log\frac{p(x^{(i)},z^{(i)};\theta
 
 $$J(Q,\theta)=\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$
 
-从前面的推导中我们知道$$l(\theta)\geq J(Q,\theta)，EM可以看作是J的坐标上升法，E步固定$$\theta$$，优化$$Q$$，M步固定$$Q$$优化$$\theta$$。
+从前面的推导中我们知道$$l(\theta)\geq J(Q,\theta)$$，EM可以看作是J的坐标上升法，E步固定$$\theta$$，优化$$Q$$，M步固定$$Q$$优化$$\theta$$。
 
-
-
-$$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}=\frac{p(x^{(i)},z^{(i)};\theta)}{p(x^{(i)};\theta)}=p(z^{(i)}|x^{(i)};\theta)$$
