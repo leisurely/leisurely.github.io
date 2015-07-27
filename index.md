@@ -12,6 +12,8 @@ tagline: 内心强大才能无懈可击！<div style="float:right"><p><SPAN styl
 a{text-decoration:none;color:#0066CC;}
 a:hover{ color:#FF0000; text-decoration: underline;} 
 </style>
+
+
 <script type="text/javascript">
 function tick() {
 var years,months,days,hours, minutes, seconds;
@@ -73,12 +75,11 @@ tick();
 <table style="width:100%">
 	<tr>
 		<td style="width:50%">
-
-<ol id="roll" style="float:right">
-	{% for post in site.posts %}
-    <li><a style="font-size:18pt" href="{{ BASE_PATH }}{{ post.url }}">{{ post.date | date_to_string }} &raquo; {{ post.title }}</a></li>
-	{% endfor %}
-</ol>
+		<ol id="roll" style="float:right">
+			{% for post in site.posts %}
+			<li><a style="font-size:18pt" href="{{ BASE_PATH }}{{ post.url }}">{{ post.date | date_to_string }} &raquo; {{ post.title }}</a></li>
+			{% endfor %}
+		</ol>
 		</td>
 		<td style="width:50%">
 		<div style="width:50%">
